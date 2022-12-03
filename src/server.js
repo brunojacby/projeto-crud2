@@ -1,7 +1,9 @@
 const express = require('express')
 const path = require('path')
+
 const db = require('./database')
 const routes = require('./routes')
+
 const app = express()
 
 //conexao com database
