@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 function connect() {
 
-mongoose.connect('mongodb://localhost:27017/')
+mongoose.connect('mongodb://127.0.0.1:27017/')
 
 const db = mongoose.connection
 
@@ -16,3 +16,4 @@ db.on('error', console.error.bind(console, 'connection error: '))
 module.exports = {
     connect
 }
+
