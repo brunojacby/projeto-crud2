@@ -3,9 +3,18 @@
     <%- include('partials/head.ejs') %>
 <body>
     <h1><%= title %></h1>
-    <h2>Hello World!</h2>
 
+    <%- include('partials/navbar.ejs') %>
 
+    
+    <ul>
+        <% users.forEach((user) => { %>
+        <li>
+            <%= user.name %> - Idade: <%= user.age %> - <%= user.email %>
+        </li>
+            
+        <%  }); %>
+    </ul>
 
     <%- include('partials/foot.ejs') %>
      
